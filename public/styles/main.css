@@ -1,0 +1,89 @@
+/* General body styles */
+body {
+    background-color: #f0f0f0; /* Light gray background for slight contrast */
+    color: #333; /* Dark gray text for softer contrast than black */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, sans-serif font */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header styles */
+h1, h2 {
+    color: #000; /* Pure black for headers */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 2px solid #000; /* Black border */
+    padding: 10px 20px;
+    text-transform: uppercase; /* Capital letters for text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #333; /* Dark gray background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Unordered list styles */
+ul {
+    list-style: none; /* No bullets */
+    padding: 0;
+}
+
+/* List item styles */
+li {
+    background-color: #fff; /* White background for list items */
+    border: 1px solid #ccc; /* Light gray border */
+    margin-bottom: 10px; /* Space between items */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Image styling */
+img {
+    width: 100px; /* Set image width */
+    height: 150px; /* Set image height */
+    object-fit: cover; /* Ensure images cover the set dimensions */
+    margin-right: 15px; /* Space between image and text */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Typography styling for book details */
+h4, h6, p {
+    margin: 5px 0; /* Margins for spacing */
+}
+
+/* Edit and Delete button styling */
+li button {
+    margin-top: 10px; /* Space above buttons in list item */
+    display: inline-block; /* Align buttons side by side */
+}
+
+/* NEW, TITLE, NEWEST, BEST button styling specific adjustments */
+div > button {
+    margin-right: 5px; /* Space between these specific buttons */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+

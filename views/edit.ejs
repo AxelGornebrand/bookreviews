@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Book</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <h1>Edit Book</h1>
+    <form action="/update/<%= book.id %>" method="POST"> <!-- Changed action URL for POST -->
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required value="<%= book.title %>">
+        </div>
+        <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required value="<%= book.author %>">
+        </div>
+        <div class="form-group">
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required><%= book.review %></textarea>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required value="<%= book.date %>">
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" required value="<%= book.rating %>">
+        </div>
+        <div class="form-group">
+            <label for="isbn">ISBN:</label>
+            <input type="isbn" id="isbn" name="isbn" required value="<%= book.isbn %>">
+        </div>
+        <button type="submit">Save Book</button>
+    </form>
+    
+</body>
+</html>
